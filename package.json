@@ -1,0 +1,15 @@
+{
+  "name": "project-digikala-2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "css:build": "tailwindcss -i ./src/input.css -o ./src/generated.css --minify",
+    "css:watch": "tailwindcss -i ./src/input.css -o ./src/generated.css --watch",
+    "build": "npm run css:build && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": { "swiper": "12.1.0" },
+  "devDependencies": { "tailwindcss": "^3.4.19", "vite": "^7.3.1" }
+}
